@@ -19,7 +19,6 @@ app.include_router(company.router,     prefix="/api/v1/company",     tags=["Comp
 app.include_router(skillgap.router,    prefix="/api/v1/skills",      tags=["Skill Gap"])
 app.include_router(chatbot.router,     prefix="/api/v1/chatbot",     tags=["Chatbot"])
 app.include_router(resume.router,      prefix="/api/v1/resume",      tags=["Resume ML"])
-app.include_router(jobanalyzer.router, prefix="/api/v1/jobanalyzer", tags=["Job Analyzer"])
 
 @app.get("/")
 def root():
